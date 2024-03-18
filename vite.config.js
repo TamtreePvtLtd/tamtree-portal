@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   // base: "/TAM_PORTAL/",
-  server: {
-    port: 5175,
-  },
+  // server: {
+  //   port: 5175,
+  // },
 });
