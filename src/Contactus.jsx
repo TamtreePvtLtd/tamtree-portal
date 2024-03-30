@@ -11,7 +11,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WebIcon from "@mui/icons-material/Web";
 import { useMediaQuery } from "@mui/material";
 import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
 
 function Contactus() {
   const handleSubmit = (event) => {
@@ -41,7 +40,7 @@ function Contactus() {
           textAlign="center"
           padding="10px"
           color="white"
-          fontSize={isSmallScreen ? "8vw" : "4vw"}
+          fontSize={isSmallScreen ? "8vw" : "3vw"}
         >
           Contact Us
         </Typography>
@@ -62,42 +61,57 @@ function Contactus() {
         <Grid container spacing={2} my={4}>
           <Grid item xs={12} md={7}>
             <Grid container rowGap={3}>
-              <Grid item md={7}>
+              <Grid item xs={12} md={7}>
                 <Fade left>
-                  <Typography variant="h4" sx={{ color: "white" }}>
+                  <Typography
+                    variant="h4"
+                    sx={{
+                      color: "white",
+                      textAlign: isSmallScreen ? "center" : "left",
+                      marginBottom: "-20px",
+                    }}
+                  >
                     Address
                   </Typography>
                 </Fade>
               </Grid>
-
               <Grid
                 item
                 container
-                spacing={2}
-                style={{ display: "flex", flex: "row" }}
+                spacing={0}
+                justifyContent={isSmallScreen ? "center" : "flex-start"}
+                marginLeft={isSmallScreen ? "unset" : "6px"}
               >
                 <Fade bottom duration={2000} cascade>
-                  <Grid item>
+                  <Grid item marginTop={"20px"}>
                     <Typography
                       variant="body1"
                       fontSize="20px"
                       fontWeight={600}
                       color="white"
                       sx={{
-                        textDecoration: "underline",
                         textDecorationThickness: "2px",
                         display: "flex",
                         alignItems: "center",
                         gap: "3px",
+                        marginBottom: "15px",
+                        marginLeft: isSmallScreen ? "25px" : "-7px",
                       }}
                     >
-                      <LocationOnIcon sx={{ color: "white" }} />
+                      <LocationOnIcon
+                        sx={{
+                          color: "white",
+                        }}
+                      />
                       India Office:
                     </Typography>
                     <Typography
                       variant="body2"
-                      fontSize="18px"
-                      sx={{ color: "white" }}
+                      fontSize="17px"
+                      sx={{
+                        color: "white",
+                        marginLeft: isSmallScreen ? "20%" : "unset",
+                      }}
                     >
                       <p> 1/62 kilsathambur</p>
                       <p>Namakkal </p>
@@ -109,18 +123,19 @@ function Contactus() {
                   </Grid>
                 </Fade>
                 <Fade bottom duration={2500} cascade>
-                  <Grid item>
+                  <Grid item marginTop={"20px"}>
                     <Typography
                       variant="body1"
                       fontSize="20px"
                       fontWeight={600}
                       color="white"
                       sx={{
-                        textDecoration: "underline",
                         textDecorationThickness: "2px",
                         display: "flex",
                         alignItems: "center",
                         gap: "3px",
+                        marginBottom: "15px",
+                        marginLeft: isSmallScreen ? "24px" : "-8px",
                       }}
                     >
                       <LocationOnIcon sx={{ color: "white" }} />
@@ -128,8 +143,11 @@ function Contactus() {
                     </Typography>
                     <Typography
                       variant="body2"
-                      fontSize="18px"
-                      sx={{ color: "white" }}
+                      fontSize="16px"
+                      sx={{
+                        color: "white",
+                        marginLeft: isSmallScreen ? "20%" : "unset",
+                      }}
                     >
                       <p>5900 Blcones Drive</p>
                       <p>STE 100 Austin,TX 78731</p>
@@ -138,19 +156,24 @@ function Contactus() {
                   </Grid>
                 </Fade>
                 <Fade bottom duration={3000} cascade>
-                  <Grid item>
-                    <Box>
+                  <Grid item marginTop={"20px"}>
+                    <Box
+                      sx={{
+                        marginRight: "60px",
+                        marginLeft: isSmallScreen ? "60px" : "30px",
+                      }}
+                    >
                       <Typography
                         variant="body1"
                         fontSize="20px"
                         fontWeight={600}
                         color="white"
                         sx={{
-                          textDecoration: "underline",
                           textDecorationThickness: "2px",
                           display: "flex",
                           alignItems: "center",
                           gap: "3px",
+                          marginBottom: "20px",
                         }}
                       >
                         <WebIcon sx={{ color: "white" }} />
@@ -159,8 +182,11 @@ function Contactus() {
 
                       <Typography
                         variant="body2"
-                        fontSize="18px"
-                        sx={{ color: "white" }}
+                        fontSize="17px"
+                        sx={{
+                          color: "white",
+                          marginBottom: "50px",
+                        }}
                       >
                         <p>tamtreellc.com</p>
                       </Typography>
@@ -179,7 +205,7 @@ function Contactus() {
               justifyContent: isMediumScreen
                 ? "flex-end"
                 : isSmallScreen
-                ? "flex-start"
+                ? "center"
                 : "initial",
             }}
           >
@@ -194,7 +220,7 @@ function Contactus() {
                 }}
               >
                 <Typography variant="h6">Send Message</Typography>
-                <Grid container spacing={2}>
+                <Grid container spacing={2} textAlign={"center"}>
                   <Grid item xs={12}>
                     <TextField
                       label="Name"

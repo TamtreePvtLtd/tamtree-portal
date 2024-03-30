@@ -41,12 +41,20 @@ function Training() {
       title: "Angular",
       img: "./assets/images/angular.png",
     },
+    {
+      title: "Phython",
+      img: "./assets/images/Phython.png",
+    },
+    {
+      title: "Django",
+      img: "./assets/images/Django.png",
+    },
   ];
   return (
     <>
       <Box sx={{ backgroundColor: "#f6f6f9" }} p={2}>
         <Container>
-          <Typography variant="h4" fontWeight="700">
+          <Typography variant="h5" fontWeight="700">
             What TamTree Offers You?
           </Typography>
           <Grid
@@ -127,7 +135,8 @@ function Training() {
                           Full Stack Development
                         </Typography>
                         <Typography>
-                          Learn Javascript, HTML, CSS, MERN Stack & more
+                          Learn Javascript, HTML, CSS, MERN
+                          Stack,React,Phython,Django & more
                         </Typography>
                       </Box>
                     </Paper>
@@ -174,58 +183,6 @@ function Training() {
               </Box>
             </Grid>
           </Grid>
-        </Container>
-      </Box>
-      <Box sx={{ backgroundColor: "#eae1f7" }} p={2}>
-        <Container>
-          <Box>
-            <Typography variant="h4" fontWeight="700" color="#7942d4">
-              Technologies covered
-            </Typography>
-            <Box>
-              <Marquee>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                  m={2}
-                >
-                  {Technologys.map((item) => (
-                    <Box
-                      key={item.id}
-                      sx={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexDirection: "column",
-                        alignItems: "center",
-                        backgroundColor: "#fff",
-                        height: "120px",
-                        width: "170px",
-                        margin: "0 5px",
-                        borderRadius: "10px",
-                      }}
-                    >
-                      <img
-                        src={item.img}
-                        style={{
-                          width: "25%",
-                          height: "auto",
-                        }}
-                      />
-                      <Typography
-                        pt={2}
-                        style={{ fontSize: "20px", fontWeight: "600" }}
-                      >
-                        {item.title}
-                      </Typography>
-                    </Box>
-                  ))}
-                </Box>
-              </Marquee>
-            </Box>
-          </Box>
         </Container>
       </Box>
     </>

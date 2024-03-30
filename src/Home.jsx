@@ -4,7 +4,6 @@ import Fade from "react-reveal/Fade";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Home() {
-
   const matches = useMediaQuery("(max-width:900px)");
 
   return (
@@ -21,7 +20,7 @@ function Home() {
       }}
     >
       <Grid item xs={12} sm={12} md={6} display={"flex"} alignItems={"center"}>
-        <Container>
+        <Container sx={{marginLeft:"30px"}}>
           <Fade bottom>
             <Typography
               variant="h2"
@@ -29,6 +28,7 @@ function Home() {
               fontWeight={"600"}
               color={"white"}
               my={1}
+           
             >
               Welcome to TamTree,
             </Typography>
@@ -44,6 +44,7 @@ function Home() {
               aoa
               fontSize={matches ? "5vw" : "2vw"}
               lineHeight={1}
+            
             >
               Your Partner in Innovation and Transformation!
             </Typography>

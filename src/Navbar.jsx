@@ -19,7 +19,7 @@ const navItems = [
   { label: " Home", id: "home" },
   { label: "Services", id: "services" },
   { label: "Training", id: "training" },
-  { label: "Contact us", id: "contactus" },
+  { label: "Contact Us", id: "contactus" },
 ];
 
 export default function Navbar() {

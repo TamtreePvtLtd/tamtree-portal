@@ -11,7 +11,6 @@ import "./ChooseUs.css";
 // import "./wow.min.js";
 import Fade from "react-reveal/Fade";
 
-
 function ChooseUs() {
   // useEffect(() => {
   //   const wow = new WOW.WOW({
@@ -51,14 +50,14 @@ function ChooseUs() {
         "We tailor our services to match your unique goals, working closely with you to deliver solutions that align with your vision.",
       imgUrl: "./assets/images/Customized_Solutions.png",
       id: 3,
-      color: "linear-gradient(to right,#4392d5 0%,#4faede 100%)",
-      border_color: "#4dabde",
+      color: "linear-gradient(to right,#30077d 0%,#0f51bf 100%)",
+      border_color: "#104cba",
     },
     {
       title: "Unwavering Quality",
       description:
         " Quality is at the core of everything we do. We are committed to delivering solutions that are robust, secure, and user-centric.",
-      imgUrl: "./assets/images/Unwavering_Quality.png", 
+      imgUrl: "./assets/images/Unwavering_Quality.png",
       id: 4,
       color: "linear-gradient(to right,#ff3834 0%,#ff7133 100%)",
       border_color: "#fe6232",
@@ -77,17 +76,17 @@ function ChooseUs() {
     <Box
       sx={{
         px: 3,
-        mb: 3,
+        mt: 3,
       }}
     >
       <Typography
         variant="h3"
         fontWeight={"500"}
-        my={5}
-        fontSize={matches ? "8vw" : "4vw"}
+        mb={5}
+        fontSize={matches ? "8vw" : "3vw"}
         sx={{ display: "flex", justifyContent: "center" }}
       >
-        Why Choose us
+        Why Choose Us
       </Typography>
 
       <Box
@@ -204,13 +203,13 @@ function ChooseUs() {
                       fontWeight={"500"}
                       color="black"
                       style={{ fontSize: matches ? "4vw" : "2.2vw" }}
-                      lineHeight={1}
+                      lineHeight={1.5}
                     >
                       {item.title}
                     </Typography>
                     <Typography
                       className="discretion"
-                      lineHeight={1}
+                      lineHeight={1.2}
                       style={{
                         fontSize: matches ? "3.3vw" : "1.4vw",
                         opacity: 0.6,
